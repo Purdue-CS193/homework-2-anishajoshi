@@ -100,10 +100,10 @@ public class Questions {
         // reverse the number
         // 12345 should become 54321
         // Hint: How would you turn 9 into 95? Not by adding 86
-        int answer = 1;
+        int answer = 0;
         while (input != 0) {
             int digit = input % 10;
-            answer = answer + digit;
+            answer = answer *10 + digit;
             input = input / 10;
         }
         return answer;
